@@ -12,7 +12,7 @@ import { NotFoundPageComponent } from './404/not-found-page/not-found-page.compo
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,

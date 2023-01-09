@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { ChartData, ChartType } from 'chart.js';
 
 @Component({
@@ -6,7 +6,7 @@ import { ChartData, ChartType } from 'chart.js';
   templateUrl: './donut.component.html',
   styleUrls: ['./donut.component.css']
 })
-export class DonutComponent implements OnInit, OnChanges{
+export class DonutComponent implements OnChanges{
 
   @Input("fields") doughnutChartLabels: string[] = ['Default Sales facebook', 'Default Sales Instagram', 'Default Sales Twitter'];
   @Input("title") title:string = "Default Sales";
@@ -25,7 +25,7 @@ export class DonutComponent implements OnInit, OnChanges{
 
   public doughnutChartType: ChartType = 'doughnut';
 
-  ngOnChanges(changes: SimpleChanges): void {
+  ngOnChanges(): void {
     this.doughnutChartData = {
       labels: this.doughnutChartLabels,
       datasets: [
@@ -37,9 +37,4 @@ export class DonutComponent implements OnInit, OnChanges{
     }
   }
 
-  ngOnInit(): void {
-    console.log(this.doughnutChartLabels);
-    console.log(this.dataValues);
-    
-  }
 }

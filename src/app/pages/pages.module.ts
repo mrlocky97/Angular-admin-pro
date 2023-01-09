@@ -10,6 +10,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { DashborardComponent } from './dashborard/dashborard.component';
 import { GraphComponent } from './graph/graph.component';
 import { MainPageComponent } from './main-page.component';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MainPageComponent } from './main-page.component';
     DashborardComponent,
     ProgressComponent,
     GraphComponent,
-    MainPageComponent
+    MainPageComponent,
+    AcountSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { MainPageComponent } from './main-page.component';
     DashborardComponent,
     ProgressComponent,
     GraphComponent,
-    MainPageComponent
+    MainPageComponent,
+    AcountSettingsComponent
   ]
 })
 export class PagesModule { }

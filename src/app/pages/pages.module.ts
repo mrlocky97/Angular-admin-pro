@@ -11,6 +11,8 @@ import { DashborardComponent } from './dashborard/dashborard.component';
 import { GraphComponent } from './graph/graph.component';
 import { MainPageComponent } from './main-page.component';
 import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { AcountSettingsComponent } from './acount-settings/acount-settings.compo
     ProgressComponent,
     GraphComponent,
     MainPageComponent,
-    AcountSettingsComponent
+    AcountSettingsComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
